@@ -14,7 +14,6 @@ photo = PhotoImage(file=image_path)
 l1 = Label(image = photo)
 l1.image = photo
 
-
 def server():
     import Server
 
