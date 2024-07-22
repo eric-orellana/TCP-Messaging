@@ -1,4 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const messageElement = document.getElementById('message');
-    messageElement.textContent = "Hello Katie";
+// JavaScript functionality for your website
+
+// Example: Smooth scrolling for navigation links
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
+
+// Add more JavaScript functions and event listeners here

@@ -1,15 +1,86 @@
 body {
+/* Basic CSS Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Variables */
+:root {
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+    --spacing-xlarge: 32px;
+
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 20px;
+    --font-size-xlarge: 24px;
+}
+
+body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+header {
+    background: #333;
+    color: #fff;
+    padding: var(--spacing-medium) 0;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('pigeon.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 var(--spacing-medium);
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: var(--spacing-large);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: var(--spacing-xlarge);
+}
+
+h1, h2 {
+    margin-bottom: var(--spacing-medium);
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: var(--spacing-medium) 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Additional Styles */
+/* Add custom styles for your website here */
+
 }
